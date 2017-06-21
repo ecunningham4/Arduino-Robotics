@@ -43,15 +43,15 @@ void loop() {
 
   servo1.write(10); // Rotate the servo 5
 
-  servo2.write(10); // Rotate the servo 6
+  servo2.write(180); // Rotate the servo 6
   
-  delay(1000);
+  delay(300);
 
-  servo1.write(90); // Rotate the servo 5
+  servo1.write(180); // Rotate the servo 5
 
-  servo2.write(90); // Rotate the servo 6
+  servo2.write(10); // Rotate the servo 6
 
-  delay(1000);
+  delay(300);
 
 
 long duration, distance;
@@ -84,29 +84,29 @@ long duration, distance;
     Serial.println(" cm");
    }
   
-    delay(200);    // wait before doing it again
+    delay(300);    // wait before doing it again
   
   if(distance <=20)        // if ultrasonic sensor detects an obstacle less than 20cm in 90 degree angle.
  
   {servo1.write(10); // Rotate the servo 5
   
-  delay(1000);
+  delay(2000);
 
-  servo1.write(90); // Rotate the servo 5
+  servo1.write(180); // Rotate the servo 5
         //servo rotates at full speed to the right
  
-   delay(600);
+   delay(2000);
    
   }
   
   else{servo1.write(10); // Rotate the servo 5
   
-  delay(1000);
+  delay(300);
 
-  servo1.write(90); // Rotate the servo 5
+  servo1.write(180); // Rotate the servo 5
         //servo rotates at full speed to the right
  
-   delay(600);
+   delay(300);
    }
 
   }
