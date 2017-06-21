@@ -111,6 +111,10 @@ long duration, distance;
 
   }
 
+  //for butterfly use 100
+   //this one use 300
+
+
 //might need:
 // Serial.print("cm"); //print distance unit cm
 //Serial.println(distance);//distance
