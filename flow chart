@@ -1,21 +1,22 @@
 start
 
 
-servo motors move at similar continous speed 
+servo1 and servo2 move at same speed same direction
+using millis instead of delay
+0 to 180 then 180 to 0 continously
 to create the illusion of wings flapping
 this also (with the help of balloons)will make it move in 
 one continous line 
 
 
-distance sensor works from beginning
+distance sensor serial prints distance in mm 
+goes through code with if/or statement that determines if the numbers in mm
+are smaller or larger than 20
+if they are larger nothing happens
+if they are smaller then servo1 stops 
+until distance sensor reads a number larger than 20
 
 
-robot which is moving in a straight line approaches the wall
-
-
-distance sensor gets reading of number that is under 20
-(code will have if/or statement stating that if the distance sensor gets
-a reading of twenty or less than servo one motor slows or stops)
 
 
 with one wing (servo motor) flapping and the other wing not 
